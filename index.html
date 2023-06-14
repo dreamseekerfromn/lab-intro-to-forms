@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+    pursuit lab
+    author: Sung Yi
+    lab partner: Anile Choice
+-->
+<html lang="en">
+    <head>
+        <title>Payment form</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <div>
+            <h1>Payment Form</h1>
+            <p>require fields are marked by *</p>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <form>
+                        <p>
+                            <label><input type = "radio" name="mx" id="mx" checked = "checked" />Mx.</label><br/>
+                            <label><input type = "radio" name="mr" id="mr" />Mr.</label><br/>
+                            <label><input type = "radio" name="ms" id="ms" />Ms.</label><br/>
+                            <label><input type = "radio" name="mrs" id="mrs" />Mrs.</label><br/>
+                            <label>name<br/><input type = "text" id="name" name="name" /></label><br/>
+                            <label>email<br/><input type = "email" id="email" name="email" /></label><br/>
+                        </p>
+                    </form>
+                </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <form>
+                    <label>
+                        <select id="cardtype" name = "cardtype">
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="american-express">American Express</option>
+                            <option value="discover">Discover</option>
+                        </select>
+                    </label>
+                    <br/>
+                    <label for="creditN"><br/><input type="tel" pattern="[0-9]{12}" id="creditN" name="creditNumber" placeholder="xxxx-xxxx-xxxx"/>Credit card number</label><br/><br/>
+                    <label for="expiration-date">Expiration date</label><br/><input type="text" name="expiration-date" id="expiration-date"/><br/>
+                </form>
+            </fieldset>
+            
+            <form>
+                <label><input type="submit" value="Submit Payment"/></label>
+            </form>
+        </div>
+    </body>
+</html>
