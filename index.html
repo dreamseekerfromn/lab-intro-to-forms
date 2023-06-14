@@ -40,7 +40,7 @@
                         </select>
                     </label>
                     <br/>
-                    <label for="creditN"><br/><input type="tel" pattern="[0-9]{12}" id="creditN" name="creditNumber" placeholder="xxxx-xxxx-xxxx"/>Credit card number</label><br/><br/>
+                    <label for="creditN"><br/><input type="tel" inputmode="numeric" pattern="[0-9\s]{12}" maxlength="12" id="creditN" name="creditNumber" placeholder="xxxx-xxxx-xxxx"/>Credit card number</label><br/><br/>
                     <label for="expiration-date">Expiration date</label><br/><input type="text" name="expiration-date" id="expiration-date"/><br/>
                 </form>
             </fieldset>
